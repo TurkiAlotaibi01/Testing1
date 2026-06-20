@@ -200,36 +200,54 @@ input {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 12% 6%, rgba(255, 255, 255, 0.95) 0 1px, transparent 2px),
-    radial-gradient(circle at 19% 15%, rgba(255, 231, 163, 0.8) 0 1.2px, transparent 2.5px),
-    radial-gradient(circle at 84% 9%, rgba(255, 255, 255, 0.7) 0 1px, transparent 2.4px),
-    radial-gradient(circle at 89% 55%, rgba(255, 231, 163, 0.65) 0 1.4px, transparent 2.8px),
-    radial-gradient(circle at 14% 82%, rgba(255, 255, 255, 0.6) 0 1px, transparent 2.4px),
-    radial-gradient(circle at 50% 96%, rgba(255, 231, 163, 0.65) 0 1.4px, transparent 2.8px),
-    linear-gradient(180deg, #020912 0%, #07101f 52%, #0d2442 100%);
+    radial-gradient(circle at 8% 8%, rgba(255, 255, 255, 0.9) 0 1.2px, transparent 2.4px),
+    radial-gradient(circle at 16% 15%, rgba(255, 255, 255, 0.65) 0 1px, transparent 2.2px),
+    radial-gradient(circle at 23% 3%, rgba(255, 255, 255, 0.95) 0 1.4px, transparent 2.8px),
+    radial-gradient(circle at 78% 7%, rgba(255, 255, 255, 0.72) 0 1.1px, transparent 2.4px),
+    radial-gradient(circle at 91% 5%, rgba(255, 255, 255, 0.95) 0 1.8px, transparent 3.3px),
+    radial-gradient(circle at 5% 20%, rgba(255, 255, 255, 0.75) 0 1px, transparent 2.2px),
+    radial-gradient(circle at 8% 60%, rgba(255, 255, 255, 0.7) 0 1px, transparent 2.2px),
+    radial-gradient(circle at 12% 91%, rgba(255, 255, 255, 0.68) 0 1.2px, transparent 2.4px),
+    radial-gradient(circle at 95% 96%, rgba(255, 255, 255, 0.58) 0 1px, transparent 2.2px),
+    radial-gradient(circle at 92% 39%, rgba(255, 255, 255, 0.82) 0 1px, transparent 2.3px),
+    linear-gradient(180deg, #000000 0%, #05101e 50%, #0e294a 100%);
 }
 
 .review-cloud {
   position: relative;
-  min-height: 9.8rem;
-  padding: 1.45rem 1.4rem 1.1rem;
+  min-height: 10.9rem;
+  padding: 1.3rem 1.1rem 0.9rem;
   text-align: center;
-  filter: drop-shadow(0 18px 0 rgba(155, 174, 188, 0.7)) drop-shadow(0 26px 22px rgba(0, 0, 0, 0.28));
+  filter: drop-shadow(0 9px 0 rgba(150, 174, 186, 0.7)) drop-shadow(0 15px 0 rgba(96, 125, 145, 0.58)) drop-shadow(0 21px 16px rgba(0, 0, 0, 0.28));
 }
 
 .review-cloud::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 0.1rem 0 0.95rem;
   z-index: -1;
-  border-radius: 48% 52% 43% 57% / 54% 48% 52% 46%;
+  border-radius: 43% 57% 45% 55% / 52% 47% 53% 48%;
   background:
-    radial-gradient(circle at 22% 56%, #f9fbff 0 2.5rem, transparent 2.55rem),
-    radial-gradient(circle at 35% 35%, #ffffff 0 3.2rem, transparent 3.25rem),
-    radial-gradient(circle at 57% 26%, #ffffff 0 3.6rem, transparent 3.65rem),
-    radial-gradient(circle at 75% 50%, #f9fbff 0 3.25rem, transparent 3.3rem),
+    radial-gradient(circle at 12% 55%, #f9fbff 0 2.65rem, transparent 2.7rem),
+    radial-gradient(circle at 26% 45%, #ffffff 0 3.15rem, transparent 3.2rem),
+    radial-gradient(circle at 47% 24%, #ffffff 0 3.65rem, transparent 3.7rem),
+    radial-gradient(circle at 70% 32%, #ffffff 0 3.3rem, transparent 3.35rem),
+    radial-gradient(circle at 88% 54%, #f9fbff 0 2.85rem, transparent 2.9rem),
     #f8fbff;
-  border: 2px solid rgba(84, 102, 127, 0.36);
+  border: 2px solid rgba(84, 102, 127, 0.46);
+}
+
+.review-cloud::after {
+  content: "";
+  position: absolute;
+  left: 2.7rem;
+  bottom: 1.05rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: #f8fbff;
+  border: 2px solid rgba(84, 102, 127, 0.38);
+  box-shadow: 2.6rem 0.95rem 0 -0.75rem #f8fbff;
 }
 
 .cloud-3::before {
