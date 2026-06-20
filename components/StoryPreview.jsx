@@ -71,7 +71,7 @@ export default function StoryPreview({ childName, showAudioPreview }) {
             <div className="space-y-3">
               <p className="text-xl font-black">بعد التسجيل بتظهر هنا عينة القصة.</p>
               <p className="text-sm font-semibold leading-7 text-[#dfe4ff]">
-                اضغط اسمع التجربة بعد ما تخلص التسجيل.
+                اضغطي اسمعي التجربة بعد ما تخلصين التسجيل.
               </p>
             </div>
           )}

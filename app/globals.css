@@ -196,6 +196,42 @@ input {
   display: none;
 }
 
+.subscription-sky {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 6%, rgba(255, 255, 255, 0.95) 0 1px, transparent 2px),
+    radial-gradient(circle at 19% 15%, rgba(255, 231, 163, 0.8) 0 1.2px, transparent 2.5px),
+    radial-gradient(circle at 84% 9%, rgba(255, 255, 255, 0.7) 0 1px, transparent 2.4px),
+    radial-gradient(circle at 89% 55%, rgba(255, 231, 163, 0.65) 0 1.4px, transparent 2.8px),
+    radial-gradient(circle at 14% 82%, rgba(255, 255, 255, 0.6) 0 1px, transparent 2.4px),
+    radial-gradient(circle at 50% 96%, rgba(255, 231, 163, 0.65) 0 1.4px, transparent 2.8px),
+    linear-gradient(180deg, #020912 0%, #07101f 52%, #0d2442 100%);
+}
+
+.review-cloud {
+  position: relative;
+  min-height: 9.8rem;
+  padding: 1.45rem 1.4rem 1.1rem;
+  text-align: center;
+  filter: drop-shadow(0 18px 0 rgba(155, 174, 188, 0.7)) drop-shadow(0 26px 22px rgba(0, 0, 0, 0.28));
+}
+
+.review-cloud::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 48% 52% 43% 57% / 54% 48% 52% 46%;
+  background:
+    radial-gradient(circle at 22% 56%, #f9fbff 0 2.5rem, transparent 2.55rem),
+    radial-gradient(circle at 35% 35%, #ffffff 0 3.2rem, transparent 3.25rem),
+    radial-gradient(circle at 57% 26%, #ffffff 0 3.6rem, transparent 3.65rem),
+    radial-gradient(circle at 75% 50%, #f9fbff 0 3.25rem, transparent 3.3rem),
+    #f8fbff;
+  border: 2px solid rgba(84, 102, 127, 0.36);
+}
+
 .cloud-3::before {
   top: -2.4rem;
   right: 3.2rem;

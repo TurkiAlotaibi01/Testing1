@@ -50,7 +50,7 @@ export default function Home() {
             href="/next"
             className="inline-flex min-h-14 w-full max-w-sm items-center justify-center rounded-full bg-white px-10 text-lg font-extrabold text-bedtime-navy shadow-[0_18px_45px_rgba(255,255,255,0.18)] transition hover:-translate-y-0.5 hover:bg-bedtime-cream focus:outline-none focus:ring-4 focus:ring-white/30 sm:w-auto"
           >
-            جرّب الحين
+            اشتركي الحين
           </a>
         </div>
 

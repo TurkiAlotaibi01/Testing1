@@ -56,7 +56,7 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
   }
 
   const buttonLabel =
-    status === "recording" ? "إيقاف التسجيل" : status === "finished" ? "اسمع التجربة" : "ابدأ التسجيل";
+    status === "recording" ? "إيقاف التسجيل" : status === "finished" ? "اسمعي التجربة" : "ابدئي التسجيل";
 
   return (
     <section id="voice-trial" className="flex min-w-0 scroll-mt-6 flex-col rounded-[2rem] border border-white/10 bg-[#0b1428]/82 p-2 text-white shadow-[0_26px_90px_rgba(0,0,0,0.34)] backdrop-blur-md sm:p-4 lg:p-5">
@@ -65,9 +65,9 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
         <span className="pointer-events-none absolute bottom-8 right-4 h-20 w-32 rounded-full bg-[#ffe7a3]/8 blur-2xl" aria-hidden="true" />
 
         <div className="relative">
-          <h2 className="break-words text-3xl font-black leading-tight text-white sm:text-4xl">جرّب <span className="text-[#ffe7a3]">بصوتك</span></h2>
+          <h2 className="break-words text-3xl font-black leading-tight text-white sm:text-4xl">جرّبي <span className="text-[#ffe7a3]">بصوتك</span></h2>
           <p className="mt-3 text-base font-semibold leading-7 text-[#dfe4ff]">
-            اقرأ الجملة وسجّل صوتك
+            اقرئي الجملة وسجّلي صوتك
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
         </label>
 
         <div className="relative mt-6 space-y-2">
-          <p className="text-sm font-extrabold text-[#ffe7a3]">قل بصوتك:</p>
+          <p className="text-sm font-extrabold text-[#ffe7a3]">قولي بصوتك:</p>
           <p className="text-pretty break-words text-base font-bold leading-8 text-white sm:text-lg">
             "{readSentence}"
           </p>
