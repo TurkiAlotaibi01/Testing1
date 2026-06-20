@@ -23,14 +23,14 @@ function StoryText({ childName }) {
 
 export default function StoryPreview({ childName, showAudioPreview }) {
   return (
-    <section id="story-preview" className="min-w-0 scroll-mt-6 rounded-[2rem] border border-white/12 bg-[#10183d]/72 p-4 shadow-soft backdrop-blur-md sm:p-6 lg:p-7">
+    <section id="story-preview" className="min-w-0 scroll-mt-6 rounded-[2rem] border border-white/10 bg-[#0b1428]/78 p-4 shadow-[0_26px_90px_rgba(0,0,0,0.3)] backdrop-blur-md sm:p-6 lg:p-7">
       <div className="mb-5">
-        <p className="text-sm font-extrabold text-[#cfd6ff]">معاينة القصة</p>
-        <h2 className="mt-2 text-3xl font-black text-white sm:text-4xl">قصتك جاهزة بصوتك</h2>
+        <p className="text-sm font-extrabold text-[#ffe7a3]">معاينة القصة</p>
+        <h2 className="mt-2 text-3xl font-black text-white sm:text-4xl">قصتك جاهزة <span className="text-[#ffe7a3]">بصوتك</span></h2>
       </div>
 
       <div className="grid min-w-0 gap-5 lg:grid-cols-[1fr_0.82fr] lg:items-stretch">
-        <div className="relative min-w-0 overflow-hidden rounded-[1.75rem] border border-[#f5e7bc]/50 bg-gradient-to-br from-[#fff8e5] via-[#f8fbff] to-[#e7e2ff] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:p-7">
+        <div className="relative min-w-0 overflow-hidden rounded-[1.75rem] border border-[#f5e7bc]/40 bg-gradient-to-br from-[#fff8e5] via-[#f8fbff] to-[#ece8ff] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7),0_18px_55px_rgba(0,0,0,0.16)] sm:p-7">
           <span className="absolute -left-8 -top-8 h-24 w-24 rounded-full bg-bedtime-blue/35" aria-hidden="true" />
           <span className="absolute -bottom-10 right-10 h-28 w-28 rounded-full bg-bedtime-rose/35" aria-hidden="true" />
           <div className="relative">
@@ -47,7 +47,7 @@ export default function StoryPreview({ childName, showAudioPreview }) {
           </div>
         </div>
 
-        <div className="flex min-h-64 min-w-0 flex-col justify-center rounded-[1.75rem] border border-white/12 bg-white/10 p-5 text-white sm:p-6">
+        <div className="flex min-h-64 min-w-0 flex-col justify-center rounded-[1.75rem] border border-white/10 bg-white/[0.07] p-5 text-white sm:p-6">
           {showAudioPreview ? (
             <div className="space-y-5">
               <p className="text-lg font-black">عينة صوتية وهمية للقصة</p>

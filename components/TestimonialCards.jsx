@@ -15,19 +15,22 @@ const testimonials = [
 
 export default function TestimonialCards() {
   return (
-    <section
-      aria-label="آراء أولية"
-      className="testimonial-rail flex w-full max-w-full snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pb-3 sm:grid sm:max-w-4xl sm:grid-cols-3 sm:overflow-visible sm:pb-0"
-    >
-      {testimonials.map((testimonial) => (
-        <article
-          key={testimonial.name}
-          className="min-h-[190px] w-[min(19rem,78vw)] max-w-[78vw] shrink-0 snap-center rounded-[1.35rem] border border-[#eef0ff] bg-[#fbfbff] p-4 text-right text-bedtime-navy shadow-[0_18px_45px_rgba(0,0,0,0.24)] sm:w-auto sm:max-w-none sm:shrink"
-        >
-          <p className="text-[0.92rem] font-bold leading-7 text-[#26305e]">"{testimonial.text}"</p>
-          <h2 className="mt-4 text-sm font-black text-[#5a62a1]">{testimonial.name}</h2>
-        </article>
-      ))}
+    <section aria-label="آراء أولية" className="relative">
+      <div className="mb-5 text-center">
+        <p className="text-sm font-black text-[#ffe7a3]">آراء من أولياء الأمور</p>
+        <h2 className="mt-2 text-2xl font-black text-white sm:text-3xl">وش قالوا عن التجربة؟</h2>
+      </div>
+      <div className="testimonial-rail flex w-full max-w-full snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-3 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0">
+        {testimonials.map((testimonial) => (
+          <article
+            key={testimonial.name}
+            className="min-h-[210px] w-[min(20rem,80vw)] max-w-[80vw] shrink-0 snap-center rounded-[1.5rem] border border-white/80 bg-[#fbfbff] p-5 text-right text-bedtime-navy shadow-[0_22px_70px_rgba(0,0,0,0.28)] sm:w-auto sm:max-w-none sm:shrink"
+          >
+            <p className="text-[0.95rem] font-bold leading-8 text-[#26305e]">"{testimonial.text}"</p>
+            <h3 className="mt-5 text-sm font-black text-[#665ccf]">{testimonial.name}</h3>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }

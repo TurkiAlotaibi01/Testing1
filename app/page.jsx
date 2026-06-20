@@ -3,6 +3,7 @@
 import { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import StoryPreview from "../components/StoryPreview";
+import TestimonialCards from "../components/TestimonialCards";
 import VoiceRecorderMock from "../components/VoiceRecorderMock";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-bedtime-navy text-white" dir="rtl">
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#07101f] text-white" dir="rtl">
       <div className="night-sky" aria-hidden="true">
         <span className="moon" />
         <span className="star star-1" />
@@ -33,7 +34,7 @@ export default function Home() {
         <span className="cloud cloud-3" />
       </div>
 
-      <section className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 pb-14 pt-20 sm:px-6 sm:pt-10 lg:px-8 lg:pb-20 lg:pt-6">
+      <section className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-14 px-4 pb-16 pt-20 sm:px-6 sm:pt-10 lg:px-8 lg:pb-24 lg:pt-6">
         <div id="try-now" className="grid min-h-[calc(100svh-3rem)] min-w-0 gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <HeroSection />
           <VoiceRecorderMock
@@ -51,6 +52,10 @@ export default function Home() {
           >
             جرّب الحين
           </a>
+        </div>
+
+        <div className="pt-28 lg:pt-40">
+          <TestimonialCards />
         </div>
       </section>
     </main>

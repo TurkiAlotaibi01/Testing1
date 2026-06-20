@@ -59,20 +59,20 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
     status === "recording" ? "إيقاف التسجيل" : status === "finished" ? "اسمع التجربة" : "ابدأ التسجيل";
 
   return (
-    <section id="voice-trial" className="flex min-w-0 scroll-mt-6 flex-col rounded-[2rem] border border-white/12 bg-[#10183d]/76 p-2 text-white shadow-soft backdrop-blur-md sm:p-4 lg:p-5">
-      <div className="relative flex min-h-full min-w-0 flex-col overflow-hidden rounded-[1.65rem] border border-white/10 bg-[linear-gradient(145deg,rgba(28,37,89,0.96),rgba(35,31,91,0.94)_52%,rgba(20,29,70,0.98))] p-4 sm:p-7">
-        <span className="absolute -left-16 top-5 h-36 w-36 rounded-full bg-[#8b7af0]/18 blur-3xl" aria-hidden="true" />
-        <span className="absolute bottom-10 right-4 h-24 w-36 rounded-full bg-white/8 blur-2xl" aria-hidden="true" />
+    <section id="voice-trial" className="flex min-w-0 scroll-mt-6 flex-col rounded-[2rem] border border-white/10 bg-[#0b1428]/82 p-2 text-white shadow-[0_26px_90px_rgba(0,0,0,0.34)] backdrop-blur-md sm:p-4 lg:p-5">
+      <div className="relative flex min-h-full min-w-0 flex-col overflow-hidden rounded-[1.65rem] border border-white/10 bg-[linear-gradient(145deg,rgba(12,24,48,0.98),rgba(22,30,70,0.96)_55%,rgba(11,18,40,0.98))] p-4 sm:p-7">
+        <span className="pointer-events-none absolute -left-16 top-8 h-32 w-32 rounded-full bg-[#7d75ff]/12 blur-3xl" aria-hidden="true" />
+        <span className="pointer-events-none absolute bottom-8 right-4 h-20 w-32 rounded-full bg-[#ffe7a3]/8 blur-2xl" aria-hidden="true" />
 
         <div className="relative">
-          <h2 className="break-words text-3xl font-black leading-tight text-white sm:text-4xl">جرّب بصوتك</h2>
+          <h2 className="break-words text-3xl font-black leading-tight text-white sm:text-4xl">جرّب <span className="text-[#ffe7a3]">بصوتك</span></h2>
           <p className="mt-3 text-base font-semibold leading-7 text-[#dfe4ff]">
             اقرأ الجملة وسجّل صوتك
           </p>
         </div>
 
         <label className="relative mt-6 grid gap-2 text-right">
-          <span className="text-sm font-extrabold text-[#edf0ff]">اسم الطفل</span>
+          <span className="text-sm font-extrabold text-[#ffe7a3]">اسم الطفل</span>
           <input
             value={childName}
             onChange={(event) => onChildNameChange(event.target.value)}
@@ -82,7 +82,7 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
         </label>
 
         <div className="relative mt-6 space-y-2">
-          <p className="text-sm font-extrabold text-[#edf0ff]">قل بصوتك:</p>
+          <p className="text-sm font-extrabold text-[#ffe7a3]">قل بصوتك:</p>
           <p className="text-pretty break-words text-base font-bold leading-8 text-white sm:text-lg">
             "{readSentence}"
           </p>
@@ -92,7 +92,7 @@ export default function VoiceRecorderMock({ childName, onChildNameChange, onPrev
           <button
             type="button"
             onClick={handlePrimaryAction}
-            className="group grid h-32 w-32 place-items-center rounded-full bg-white text-bedtime-navy shadow-[0_22px_65px_rgba(255,255,255,0.18)] transition hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-white/30 sm:h-36 sm:w-36"
+            className="group grid h-32 w-32 place-items-center rounded-full bg-[#fff8dd] text-bedtime-navy shadow-[0_22px_65px_rgba(255,231,163,0.2)] transition hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-[#ffe7a3]/30 sm:h-36 sm:w-36"
             aria-label={buttonLabel}
           >
             <span className="mic-glyph" aria-hidden="true" />
